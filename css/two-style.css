@@ -35,6 +35,18 @@ body {
     align-items: center;
 }
 
+.menu__principal i{
+    cursor: pointer;
+    font-size: 30px;
+    float:  right;
+    color: var(--color-texto);
+    transition: all .5s ;
+}
+
+.menu__principal i:hover{
+    color: var(--color-secundario);
+}
+
 .logo img {
     width: 130px;
     cursor: pointer;
