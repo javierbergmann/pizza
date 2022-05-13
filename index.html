@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/two-style.css">
@@ -13,17 +13,18 @@
 </head>
 
 <body>
-
+  <header>
     <div class="menu__principal">
         <div class="logo">
             <img src="img/logo.png" alt="">
         </div>
-        <div class="menu__bar">
-            <nav class="menu__bar-enlaces">
+        <div class="menu__bar" id="menuBar">
+            <i class="fas fas fa-angle-right" id="btnCloseMenu"></i>
+            <nav class="menu__bar-enlaces" id="enlaces">
                 <ul>
-                    <li><a href="">servicios</a></li>
-                    <li><a href="">equipo</a></li>
-                    <li><a href="">contacto</a></li>
+                    <li><a href="#">servicios</a></li>
+                    <li><a href="#">equipo</a></li>
+                    <li><a href="#">contacto</a></li>
                 </ul>
             </nav>
             <div class="menu__bar-redes">
@@ -34,11 +35,12 @@
 
             </div>
         </div>
-        <i class="fas fa-bars" id="btnMenuOpen"></i>
+        <i class="fas fa-bars" id="btnOpenMenu"></i>
     </div>
+</header>
+<!--slider de productos-->
 
-
-
+<script src="js/js.js"></script>
 </body>
 
 </html>
