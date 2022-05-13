@@ -40,6 +40,7 @@ body {
     cursor: pointer;
     font-size: 30px;
     float: right;
+    display: none;
     color: var(--color-texto);
     transition: all .5s;
 }
@@ -98,11 +99,52 @@ body {
     color: var(--color-secundario)
 }
 
-@media screen and(max-width: 650px){
+@media screen and (max-width: 650px) {
+
+
     .menu__principal {
         position: fixed;
         top: 0;
         margin-top: 0;
     }
-    
+
+    .menu__principal i {
+        display: block;
+    }
+
+    .menu__bar {
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 1000;
+        background: #333;
+        transition: all 1s;
+        transform: translateX(100%);
+    }
+
+    .active {
+        transform: translateX(0%);
+    }
+
+    .menu__bar i {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+
+    .menu__bar .menu__bar-enlaces ul li {
+        display: block;
+        padding: 25px 10px;
+        text-align: center;
+    }
+
+    .menu__bar .menu__bar-enlaces ul li a
+    .menu__bar .menu__bar-redes a{
+        font-size: 20px;
+    }
 }
